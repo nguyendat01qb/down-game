@@ -1,0 +1,92 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\index.vue",
+    "chunkName": "pages/admin/index"
+  },
+  {
+    "name": "category",
+    "path": "/category",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\category.vue",
+    "chunkName": "pages/category"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\search.vue",
+    "chunkName": "pages/search"
+  },
+  {
+    "name": "ShowProduct",
+    "path": "/ShowProduct",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\ShowProduct.vue",
+    "chunkName": "pages/ShowProduct"
+  },
+  {
+    "name": "signin",
+    "path": "/signin",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\signin.vue",
+    "chunkName": "pages/signin"
+  },
+  {
+    "name": "signup",
+    "path": "/signup",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\signup.vue",
+    "chunkName": "pages/signup"
+  },
+  {
+    "name": "admin-product-add",
+    "path": "/admin/product/add",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\add.vue",
+    "chunkName": "pages/admin/product/add"
+  },
+  {
+    "name": "admin-product-delete",
+    "path": "/admin/product/delete",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\delete.vue",
+    "chunkName": "pages/admin/product/delete"
+  },
+  {
+    "name": "admin-product-edit",
+    "path": "/admin/product/edit",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\edit.vue",
+    "chunkName": "pages/admin/product/edit"
+  },
+  {
+    "name": "admin-product-manager",
+    "path": "/admin/product/manager",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\manager.vue",
+    "chunkName": "pages/admin/product/manager"
+  },
+  {
+    "name": "admin-user-add",
+    "path": "/admin/user/add",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\add.vue",
+    "chunkName": "pages/admin/user/add"
+  },
+  {
+    "name": "admin-user-edit",
+    "path": "/admin/user/edit",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\edit.vue",
+    "chunkName": "pages/admin/user/edit"
+  },
+  {
+    "name": "admin-user-role",
+    "path": "/admin/user/role",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\role.vue",
+    "chunkName": "pages/admin/user/role"
+  },
+  {
+    "name": "admin-user-view",
+    "path": "/admin/user/view",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\view.vue",
+    "chunkName": "pages/admin/user/view"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\game\\\\webgame\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
