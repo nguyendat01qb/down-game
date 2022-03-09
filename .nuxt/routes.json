@@ -3,105 +3,90 @@
     "name": "admin",
     "path": "/admin",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\index.vue",
-    "chunkName": "pages/admin/index",
-    "_name": "_aada4214"
+    "chunkName": "pages/admin/index"
   },
   {
     "name": "category",
     "path": "/category",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\category.vue",
-    "chunkName": "pages/category",
-    "_name": "_22b008d1"
+    "chunkName": "pages/category"
   },
   {
     "name": "search",
     "path": "/search",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\search.vue",
-    "chunkName": "pages/search",
-    "_name": "_e8ebc18a"
+    "chunkName": "pages/search"
   },
   {
     "name": "ShowProduct",
     "path": "/ShowProduct",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\ShowProduct.vue",
-    "chunkName": "pages/ShowProduct",
-    "_name": "_4c24a2e2"
+    "chunkName": "pages/ShowProduct"
   },
   {
     "name": "signin",
     "path": "/signin",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\signin.vue",
-    "chunkName": "pages/signin",
-    "_name": "_fa48c796"
+    "chunkName": "pages/signin"
   },
   {
     "name": "signup",
     "path": "/signup",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\signup.vue",
-    "chunkName": "pages/signup",
-    "_name": "_d11c1aaa"
+    "chunkName": "pages/signup"
   },
   {
     "name": "admin-product-add",
     "path": "/admin/product/add",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\add.vue",
-    "chunkName": "pages/admin/product/add",
-    "_name": "_eb0ed5c4"
+    "chunkName": "pages/admin/product/add"
   },
   {
     "name": "admin-product-delete",
     "path": "/admin/product/delete",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\delete.vue",
-    "chunkName": "pages/admin/product/delete",
-    "_name": "_0f8f723e"
+    "chunkName": "pages/admin/product/delete"
   },
   {
     "name": "admin-product-edit",
     "path": "/admin/product/edit",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\edit.vue",
-    "chunkName": "pages/admin/product/edit",
-    "_name": "_7060b5dd"
+    "chunkName": "pages/admin/product/edit"
   },
   {
     "name": "admin-product-manager",
     "path": "/admin/product/manager",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\product\\\\manager.vue",
-    "chunkName": "pages/admin/product/manager",
-    "_name": "_2a340baa"
+    "chunkName": "pages/admin/product/manager"
   },
   {
     "name": "admin-user-add",
     "path": "/admin/user/add",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\add.vue",
-    "chunkName": "pages/admin/user/add",
-    "_name": "_b050934c"
+    "chunkName": "pages/admin/user/add"
   },
   {
     "name": "admin-user-edit",
     "path": "/admin/user/edit",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\edit.vue",
-    "chunkName": "pages/admin/user/edit",
-    "_name": "_023487be"
+    "chunkName": "pages/admin/user/edit"
   },
   {
     "name": "admin-user-role",
     "path": "/admin/user/role",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\role.vue",
-    "chunkName": "pages/admin/user/role",
-    "_name": "_e0f68ee6"
+    "chunkName": "pages/admin/user/role"
   },
   {
     "name": "admin-user-view",
     "path": "/admin/user/view",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\admin\\\\user\\\\view.vue",
-    "chunkName": "pages/admin/user/view",
-    "_name": "_32a07988"
+    "chunkName": "pages/admin/user/view"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\game\\\\webgame\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_17bc3c0f"
+    "chunkName": "pages/index"
   }
 ]

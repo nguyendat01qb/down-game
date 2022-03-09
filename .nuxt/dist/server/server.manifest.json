@@ -1,0 +1,41 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/nuxt-logo.js": "components/nuxt-logo.js",
+    "pages/ShowProduct.js": "pages/ShowProduct.js",
+    "pages/admin/index.js": "pages/admin/index.js",
+    "pages/admin/product/add.js": "pages/admin/product/add.js",
+    "pages/admin/product/delete.js": "pages/admin/product/delete.js",
+    "pages/admin/product/edit.js": "pages/admin/product/edit.js",
+    "pages/admin/product/manager.js": "pages/admin/product/manager.js",
+    "pages/admin/user/add.js": "pages/admin/user/add.js",
+    "pages/admin/user/edit.js": "pages/admin/user/edit.js",
+    "pages/admin/user/role.js": "pages/admin/user/role.js",
+    "pages/admin/user/view.js": "pages/admin/user/view.js",
+    "pages/category.js": "pages/category.js",
+    "pages/index.js": "pages/index.js",
+    "pages/search.js": "pages/search.js",
+    "pages/signin.js": "pages/signin.js",
+    "pages/signup.js": "pages/signup.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/nuxt-logo.js": "components/nuxt-logo.js.map",
+    "pages/ShowProduct.js": "pages/ShowProduct.js.map",
+    "pages/admin/index.js": "pages/admin/index.js.map",
+    "pages/admin/product/add.js": "pages/admin/product/add.js.map",
+    "pages/admin/product/delete.js": "pages/admin/product/delete.js.map",
+    "pages/admin/product/edit.js": "pages/admin/product/edit.js.map",
+    "pages/admin/product/manager.js": "pages/admin/product/manager.js.map",
+    "pages/admin/user/add.js": "pages/admin/user/add.js.map",
+    "pages/admin/user/edit.js": "pages/admin/user/edit.js.map",
+    "pages/admin/user/role.js": "pages/admin/user/role.js.map",
+    "pages/admin/user/view.js": "pages/admin/user/view.js.map",
+    "pages/category.js": "pages/category.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/search.js": "pages/search.js.map",
+    "pages/signin.js": "pages/signin.js.map",
+    "pages/signup.js": "pages/signup.js.map",
+    "server.js": "server.js.map"
+  }
+}
