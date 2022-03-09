@@ -1,7 +1,7 @@
-export const NuxtLogo = () => import('../..\\components\\NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
-export const SharedAdmin = () => import('../..\\components\\Shared\\Admin.vue' /* webpackChunkName: "components/shared-admin" */).then(c => wrapFunctional(c.default || c))
-export const SharedFooter = () => import('../..\\components\\Shared\\Footer.vue' /* webpackChunkName: "components/shared-footer" */).then(c => wrapFunctional(c.default || c))
-export const SharedHeader = () => import('../..\\components\\Shared\\Header.vue' /* webpackChunkName: "components/shared-header" */).then(c => wrapFunctional(c.default || c))
+export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
+export { default as SharedAdmin } from '../..\\components\\Shared\\Admin.vue'
+export { default as SharedFooter } from '../..\\components\\Shared\\Footer.vue'
+export { default as SharedHeader } from '../..\\components\\Shared\\Header.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

@@ -3,26 +3,23 @@ export default {
   head: {
     title: 'webstore',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src:'~/plugins/vuelidate'},
+    { src: '~/plugins/vuelidate' },
     { src: '~/plugins/sweetalert2', ssr: false },
   ],
 
@@ -40,23 +37,25 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
+    '@nuxtjs/axios',
     //nuxt/auth
-    "@nuxtjs/auth",
+    '@nuxtjs/auth',
     //
-    "vue2-editor/nuxt"
-
+    'vue2-editor/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl: "http://localhost:5000/api",
+    baseUrl: 'http://localhost:5000/api',
     proxyHeaders: false,
-    credentials: false
+    credentials: false,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    babel: {
+      compact: true,
+    },
   },
   auth: {
     strategies: {
@@ -78,10 +77,10 @@ export default {
       },
     },
     watchLoggedIn: true,
-    redirect:{
-      login:'/signin',
-      logout:'/signin',
-      callback: "/signin"
-    }
+    redirect: {
+      login: '/signin',
+      logout: '/signin',
+      callback: '/signin',
+    },
   },
 }
