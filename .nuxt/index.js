@@ -27,14 +27,16 @@ Vue.component(ClientOnly.name, ClientOnly)
 // TODO: Remove in Nuxt 3: <NoSsr>
 Vue.component(NoSsr.name, {
   ...NoSsr,
-  render (h, ctx) {
+  render(h, ctx) {
     if (process.client && !NoSsr._warned) {
       NoSsr._warned = true
 
-      console.warn('<no-ssr> has been deprecated and will be removed in Nuxt 3, please use <client-only> instead')
+      console.warn(
+        '<no-ssr> has been deprecated and will be removed in Nuxt 3, please use <client-only> instead'
+      )
     }
     return NoSsr.render(h, ctx)
-  }
+  },
 })
 
 // Component: <NuxtChild>
@@ -54,22 +56,40 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
     }
     return globalNuxt
   },
-  configurable: true
+  configurable: true,
 })
 
-Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
+Vue.use(Meta, {
+  keyName: 'head',
+  attribute: 'data-n-head',
+  ssrAttribute: 'data-n-head-ssr',
+  tagIDKeyName: 'hid',
+})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {
+  name: 'page',
+  mode: 'out-in',
+  appear: false,
+  appearClass: 'appear',
+  appearActiveClass: 'appear-active',
+  appearToClass: 'appear-to',
+}
 
 const originalRegisterModule = Vuex.Store.prototype.registerModule
 
-function registerModule (path, rawModule, options = {}) {
-  const preserveState = process.client && (
-    Array.isArray(path)
-      ? !!path.reduce((namespacedState, path) => namespacedState && namespacedState[path], this.state)
-      : path in this.state
-  )
-  return originalRegisterModule.call(this, path, rawModule, { preserveState, ...options })
+function registerModule(path, rawModule, options = {}) {
+  const preserveState =
+    process.client &&
+    (Array.isArray(path)
+      ? !!path.reduce(
+          (namespacedState, path) => namespacedState && namespacedState[path],
+          this.state
+        )
+      : path in this.state)
+  return originalRegisterModule.call(this, path, rawModule, {
+    preserveState,
+    ...options,
+  })
 }
 
 async function createApp(ssrContext, config = {}) {
@@ -87,14 +107,28 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"webstore","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {
+      title: 'webstore',
+      htmlAttrs: { lang: 'en' },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: '' },
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image\u002Fx-icon', href: '\u002Ffavicon.ico' },
+      ],
+      style: [],
+      script: [],
+    },
 
     store,
     router,
     nuxt: {
       defaultTransition,
       transitions: [defaultTransition],
-      setTransitions (transitions) {
+      setTransitions(transitions) {
         if (!Array.isArray(transitions)) {
           transitions = [transitions]
         }
@@ -102,7 +136,9 @@ async function createApp(ssrContext, config = {}) {
           if (!transition) {
             transition = defaultTransition
           } else if (typeof transition === 'string') {
-            transition = Object.assign({}, defaultTransition, { name: transition })
+            transition = Object.assign({}, defaultTransition, {
+              name: transition,
+            })
           } else {
             transition = Object.assign({}, defaultTransition, transition)
           }
@@ -114,7 +150,7 @@ async function createApp(ssrContext, config = {}) {
 
       err: null,
       dateErr: null,
-      error (err) {
+      error(err) {
         err = err || null
         app.context._errored = Boolean(err)
         err = err ? normalizeError(err) : null
@@ -129,15 +165,17 @@ async function createApp(ssrContext, config = {}) {
           ssrContext.nuxt.error = err
         }
         return err
-      }
+      },
     },
-    ...App
+    ...App,
   }
 
   // Make app available into store via this.app
   store.app = app
 
-  const next = ssrContext ? ssrContext.next : location => app.router.push(location)
+  const next = ssrContext
+    ? ssrContext.next
+    : (location) => app.router.push(location)
   // Resolve route
   let route
   if (ssrContext) {
@@ -157,7 +195,7 @@ async function createApp(ssrContext, config = {}) {
     req: ssrContext ? ssrContext.req : undefined,
     res: ssrContext ? ssrContext.res : undefined,
     beforeRenderFns: ssrContext ? ssrContext.beforeRenderFns : undefined,
-    ssrContext
+    ssrContext,
   })
 
   function inject(key, value) {
@@ -189,9 +227,9 @@ async function createApp(ssrContext, config = {}) {
     Vue.use(() => {
       if (!Object.prototype.hasOwnProperty.call(Vue.prototype, key)) {
         Object.defineProperty(Vue.prototype, key, {
-          get () {
+          get() {
             return this.$root.$options[key]
-          }
+          },
         })
       }
     })
@@ -236,7 +274,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_vuelidate_4345260a(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_sweetalert2_50cd1c10 === 'function') {
+  if (
+    process.client &&
+    typeof nuxt_plugin_sweetalert2_50cd1c10 === 'function'
+  ) {
     await nuxt_plugin_sweetalert2_50cd1c10(app.context, inject)
   }
 
@@ -263,7 +304,8 @@ async function createApp(ssrContext, config = {}) {
     router.replace(app.context.route.fullPath, resolve, (err) => {
       // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
       if (!err._isRouter) return reject(err)
-      if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()
+      if (err.type !== 2 /* NavigationFailureType.redirected */)
+        return resolve()
 
       // navigated to a different route in router guard
       const unregister = router.afterEach(async (to, from) => {
@@ -282,7 +324,7 @@ async function createApp(ssrContext, config = {}) {
   return {
     store,
     app,
-    router
+    router,
   }
 }
 
